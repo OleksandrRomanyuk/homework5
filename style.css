@@ -1,0 +1,46 @@
+p{    color: #bd3309;
+    font-size: 20px;}
+.class{    color: #634747;
+    font-size: 30px;}
+input[type="text"]{
+    border-radius: 4px;
+    color: #6ae6d1;
+    border: 6px solid #e6916a;
+    background-color: #7c124c;
+    font-size: 15px;}
+.parent>p{    
+    color: black;
+    background-color: #386b83;
+    font-size: 50px;}
+button:hover
+    {background-color: #e6916a;
+    border: 6px solid #6ae6d1;
+    }
+button:focus{
+    background-color: #276b80;
+}
+button:active{
+    background-color: #810808;
+}
+.list li:first-child{
+    color: #000000;
+    font-size: 20px;
+    background-color: #8da9d4;
+}
+.last li:last-child{
+    color: #000000;
+    font-size: 20px;
+    background-color: #005ce6;
+}
+.first{
+    color: blue;
+} 
+#n1{
+    color:red;
+}
+.conflict .second{    
+font-size: 30px;
+}
+.second{    
+font-size: 10px;
+}

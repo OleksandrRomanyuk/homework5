@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="exmpl">
+        <h1>Приклади селекторів:</h1>
+
+        <div>
+            <h2>1. Селектор тегу</h2>
+            <p>Тут я використав селектор тега p</p>
+        </div>
+    
+        <div>
+            <h2>2. Селектор класу</h2>
+            <p class="class">Тут я використав селектор класу .class</p>
+        </div>
+        
+        <div>
+            <h2>3. Селектор атрибута</h2>
+            <p>Тут використаний селектор атрибута input</p>
+            <input type="text" placeholder="Напишіть щось">
+        </div>
+
+        <div>
+            <h2>4. Дочірній селектор</h2>
+            <div class="parent">
+                <p>Текст зараз всередині батьківського блока</p>
+            </div>
+        </div>
+
+        <div>
+            <h2>5. Селектор псевдокласу</h2>
+            <p>Тут використаний селектор псевдокласу :hover</p>
+            <button type="button">Кнопочка</button>
+        </div>
+
+        <div>
+            <h2>6. Теж селектор псевдокласу</h2>
+            <p>Теж псевдоклас але вже :active</p>
+            <button type="submit">Тицьни</button>
+        </div>
+        <p>Я зробив кнопки з різними типами, щоб тільки одна з них була активною при натисканні. Кнопка з типом submit буде активною, а кнопка з типом button - ні.</p>
+        <div>
+            <h2>7. Псевдоклас :first-child</h2>
+            <ul class="list">
+                <li>Перший елемент списку</li>
+                <li>Другий елемент списку</li>
+                <li>Третій елемент списку</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>8. Псевдоклас :last-child</h2>
+            <ul class="last">
+                <li>Перший елемент списку</li>
+                <li>Другий елемент списку</li>
+                <li>Третій елемент списку</li>
+            </ul>
+        </div>
+        <h2>Конфлікт селекторів</h2>
+            <p id="n1" class="first">1.Тут встановлено різні кольори для class і id. Кортежі специфічності (ID, CLASS, TYPE):#n1(1, 0, 0), .first(0, 1, 0). Перемагає #n1, тому що ID має більшу специфічність тому текст буде червоним.
+            </p>
+
+        <div class="conflict">
+            <p class="second">2.Тут я створив конфлікти класів. Кортежі: .conflict .second(0, 2, 0), .second(0, 1, 0). Перемагає .conflict .second, тому що має два класи. Розмір тексту буде 30px.</p>
+        </div>    
+            
+        
+
+
+
+
+    </section>
+</body>
+</html>
